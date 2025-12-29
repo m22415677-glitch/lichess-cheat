@@ -55,7 +55,7 @@ pygame.display.update()
 
 # First we import the stcokfish engine with a few adjusted parameters
 # The 7 threads is because I have 8 threads and you leave 1 for the system.
-stockfish = Stockfish(r'C:\stockfish_20090216_x64.exe', parameters={"Threads" : 7, "Ponder" : True, "Minimum Thinking Time": 20, "Skill Level": 20, "Hash":16, "Contempt": 0, "Slow Mover": 84})
+stockfish = Stockfish(r'C:\stockfish-windows-x86-64-avx2.exe', parameters={"Threads" : 7, "Ponder" : True, "Minimum Thinking Time": 20, "Skill Level": 20, "Hash":16, "Contempt": 0, "Slow Mover": 84})
 # If this parameter will get to high the accuracy will get better but it can cause
 # the entire program to crash.
 stockfish.set_depth(16)
@@ -397,3 +397,4 @@ while True:
     pygame.display.update()
     startAsBlackFlag = False
     cv2.waitKey(500)
+
